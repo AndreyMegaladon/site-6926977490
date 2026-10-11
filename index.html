@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Добро пожаловать</title>
+    <title>Сайт успешно создан</title>
     <style>
         * {
             margin: 0;
@@ -16,12 +16,31 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             text-align: center;
+            padding: 1rem;
         }
         .container {
             max-width: 600px;
             padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .image-wrapper img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+            object-fit: contain;
         }
         h1 {
             font-size: 2.5rem;
@@ -50,6 +69,9 @@
 </head>
 <body>
     <div class="container">
+        <div class="image-wrapper">
+            <img src="images/photo_210.jpg" alt="Загруженное изображение">
+        </div>
         <h1>Сайт успешно создан!</h1>
         <p>Это стартовая страница вашего будущего проекта. Расскажите мне, каким вы хотите его видеть, и мы вместе наполним его уникальным дизайном и функционалом.</p>
         <div class="badge">Готов к работе 🚀</div>
